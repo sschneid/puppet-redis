@@ -15,8 +15,8 @@
 class redis::params {
 
   $redis_port = '6379'
-  $redis_bind_address = false
-  $version = '2.4.13'
+  $redis_bind_address = '0.0.0.0'
+  $version = '2.6.9'
   $redis_src_dir = '/opt/redis-src'
   $redis_bin_dir = '/opt/redis'
   $redis_max_memory = '4gb'

@@ -64,14 +64,14 @@ class redis (
     path   => '/var/lib/redis',
   }
 
-  # If the version is 2.4.13, use the tarball that ships with the
+  # If the version is 2.6.9, use the tarball that ships with the
   # module.
-  if ($version == '2.4.13') {
+  if ($version == '2.6.9') {
     file { 'redis-pkg':
       ensure => present,
       path   => $redis_pkg,
       mode   => '0644',
-      source => 'puppet:///modules/redis/redis-2.4.13.tar.gz',
+      source => 'puppet:///modules/redis/redis-2.6.9.tar.gz',
     }
   }
   exec { 'get-redis-pkg':
